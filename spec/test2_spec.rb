@@ -1,22 +1,23 @@
-describe "Les emails " do
-    it "should return c'est ok" do
-      expect(get_townhall_email()).to eq(a[price])
+require_relative '../lib/app2.rb'
+# describe "Les emails " do
+#     it "Tous les emails sont présence" do
+#       expect(get_townhall_email()).to be_truthy
 
-    end
-    it "les valeurs ne sont pas null" do
-        expect(get_townhall_email(townhall_url)).to eq(true)
+#     end
+#     it "les valeurs ne sont pas null" do
+#         expect(get_townhall_email("@")).to be_truthy
     
-    end
-end
+#     end
+# end
 
 
 describe "Methode URL" do
   it "should return URL work" do
-    expect(get_townhall_urls()).to eq(a[price])
+    expect(get_townhall_urls()).to be_truthy
 
   end
   it "Should return URL OK" do
-      expect(get_townhall_urls()).to eq(true)
+      expect(get_townhall_urls()).to be_truthy
   
   end
 end

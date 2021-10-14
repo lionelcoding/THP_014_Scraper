@@ -1,10 +1,23 @@
+require_relative '../lib/app.rb'
+
 describe "Scrap method" do
-    it "should return c'est ok" do
-      expect(scrap()).to eq(a[price])
+    it "Les prix sont ok" do
+      expect(scrap()).to be_truthy
 
     end
-    it "should return TRUE when an integer is a multiple of 3 or 5" do
-        expect(is_multiple_of_3_or_5?(2)).to eq(true)
+    it "Les noms sont Ok" do
+      expect(scrap()).to be_truthy
     
     end
 end
+
+# describe "Scrap method" do
+#   it "should return c'est ok" do
+#     expect(scrap()).to be_truthy
+
+#   end
+#   it "should return c'est ok" do
+#     expect(scrap()).to eq(a[title])
+  
+#   end
+# end
